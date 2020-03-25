@@ -29,7 +29,7 @@ class QRstatComp_5 extends Component {
           </thead>
           <tbody>
             {data.map(d => (
-              <tr>
+              <tr style={{ color: d.name1 != "Unknown" ? "black" : "#A9A9A9" }}>
                 <td>{`${d.name1}`}</td>
                 <td>{formatDate(d.date1, d.time1)}</td>
                 <td>{d.c_phone_no}</td>

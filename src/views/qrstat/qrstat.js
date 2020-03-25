@@ -309,7 +309,7 @@ class QRStatis extends Component {
     fetch(fetch_string)
       .then(response => response.json())
       .then(data => {
-        this.setState(state => ({ data_5: data.c_data }));
+        this.setState(state => ({ data_5: data.c_data.reverse() }));
       });
   };
 
