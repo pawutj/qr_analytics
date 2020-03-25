@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Table } from "reactstrap";
 import "../../app/app.css";
 
+const formatDate = (name, date) => `${name.replace(/\//g, "/")} / ${date}`;
+
 class QRstatComp_5 extends Component {
   render() {
     console.log(this.props.data);
@@ -20,7 +22,7 @@ class QRstatComp_5 extends Component {
           <thead>
             <tr>
               <th>Name</th>
-
+              <th>Date / Time</th>
               <th>Phone</th>
               <th>Email</th>
             </tr>
@@ -28,7 +30,8 @@ class QRstatComp_5 extends Component {
           <tbody>
             {data.map(d => (
               <tr>
-                <td>{`${d.c_fname} ${d.c_lname}`}</td>
+                <td>{`${d.name1}`}</td>
+                <td>{formatDate(d.date1, d.time1)}</td>
                 <td>{d.c_phone_no}</td>
                 <td>{d.c_email}</td>
               </tr>
