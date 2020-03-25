@@ -1,0 +1,13 @@
+.popover{
+    border-color:#ff8d60;
+    padding: 0;
+    .popover-header{
+        background-color: theme-color("primary");
+        border-color: theme-color("primary");
+        color: #ff8d60;
+    }
+}
+.bs-popover-right .arrow{
+    border-top-color: lightblue 
+}
+    
